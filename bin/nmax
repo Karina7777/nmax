@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require('nmax')
+
+data_in_file = STDIN.read
+quantity_max_numbers = ARGV.first
+number_arr = Nmax.return_only_numbers(data_in_file)
+largest_n_numbers = Nmax.get_n_largest_numbers(number_arr, quantity_max_numbers)
+puts largest_n_numbers
+
